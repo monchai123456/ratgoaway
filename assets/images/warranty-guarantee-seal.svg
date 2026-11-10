@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" fill="none">
+  <defs>
+    <!-- Gold Medallion Gradient -->
+    <linearGradient id="goldRim" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="25%" stop-color="#CA8A04"/>
+      <stop offset="50%" stop-color="#FEF08A"/>
+      <stop offset="75%" stop-color="#A16207"/>
+      <stop offset="100%" stop-color="#EAB308"/>
+    </linearGradient>
+
+    <!-- Deep Emerald Core Gradient -->
+    <linearGradient id="emeraldCore" x1="80" y1="80" x2="320" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1B5E3A"/>
+      <stop offset="50%" stop-color="#144626"/>
+      <stop offset="100%" stop-color="#0B2B16"/>
+    </linearGradient>
+
+    <!-- Ribbon Gradient -->
+    <linearGradient id="ribbonGrad" x1="60" y1="300" x2="340" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#CA8A04"/>
+      <stop offset="30%" stop-color="#FACC15"/>
+      <stop offset="70%" stop-color="#FEF08A"/>
+      <stop offset="100%" stop-color="#A16207"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="sealShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0B2B16" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#sealShadow)">
+    <!-- 24-point Scalloped Star/Sunburst Outer Border -->
+    <path d="
+      M 200 24
+      L 213 46 L 238 39 L 246 64 L 271 63 L 273 89 L 297 95 L 293 120 L 314 133 L 303 156 L 321 174 L 305 194
+      L 319 216 L 299 233 L 307 257 L 284 270 L 287 295 L 262 303 L 259 328 L 234 330 L 225 354 L 200 350
+      L 175 354 L 166 330 L 141 328 L 138 303 L 113 295 L 116 270 L 93 257 L 101 233 L 81 216 L 95 194
+      L 79 174 L 97 156 L 86 133 L 107 120 L 103 95 L 127 89 L 129 63 L 154 64 L 162 39 L 187 46 Z"
+      fill="url(#goldRim)" stroke="#78350F" stroke-width="2"/>
+
+    <!-- Inner Golden Ring -->
+    <circle cx="200" cy="200" r="148" fill="url(#goldRim)"/>
+    <circle cx="200" cy="200" r="140" fill="#FFFFFF" fill-opacity="0.15"/>
+    <circle cx="200" cy="200" r="136" fill="url(#emeraldCore)" stroke="#FDE047" stroke-width="3"/>
+
+    <!-- Radiating Subtle Rays -->
+    <circle cx="200" cy="200" r="130" stroke="#22C55E" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+    <!-- Top 5 Gold Stars -->
+    <g fill="#FDE047">
+      <!-- Center Star -->
+      <path d="M 200 92 L 204 104 L 217 104 L 207 112 L 210 124 L 200 117 L 190 124 L 193 112 L 183 104 L 196 104 Z"/>
+      <!-- Left 1 -->
+      <path transform="translate(-32, 6) scale(0.85)" d="M 200 92 L 204 104 L 217 104 L 207 112 L 210 124 L 200 117 L 190 124 L 193 112 L 183 104 L 196 104 Z"/>
+      <!-- Right 1 -->
+      <path transform="translate(32, 6) scale(0.85)" d="M 200 92 L 204 104 L 217 104 L 207 112 L 210 124 L 200 117 L 190 124 L 193 112 L 183 104 L 196 104 Z"/>
+      <!-- Left 2 -->
+      <path transform="translate(-62, 18) scale(0.7)" d="M 200 92 L 204 104 L 217 104 L 207 112 L 210 124 L 200 117 L 190 124 L 193 112 L 183 104 L 196 104 Z"/>
+      <!-- Right 2 -->
+      <path transform="translate(62, 18) scale(0.7)" d="M 200 92 L 204 104 L 217 104 L 207 112 L 210 124 L 200 117 L 190 124 L 193 112 L 183 104 L 196 104 Z"/>
+    </g>
+
+    <!-- Main Guarantee Title -->
+    <text x="200" y="146" text-anchor="middle" font-family="'Prompt', 'Plus Jakarta Sans', sans-serif" font-size="21" font-weight="800" fill="#FEF08A" letter-spacing="1">
+      กล้ารับประกันผลงาน
+    </text>
+
+    <!-- Huge 100% -->
+    <text x="200" y="214" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Prompt', sans-serif" font-size="64" font-weight="900" fill="#FFFFFF" letter-spacing="-1">
+      100<tspan font-size="38" dy="-16" fill="#FDE047">%</tspan>
+    </text>
+
+    <!-- Subtitle Under 100% -->
+    <text x="200" y="248" text-anchor="middle" font-family="'Prompt', sans-serif" font-size="17" font-weight="700" fill="#A7F3D0" letter-spacing="0.5">
+      ซื่อสัตย์ • ไร้สารพิษ
+    </text>
+
+    <!-- Checkmark Badge Icon -->
+    <circle cx="200" cy="276" r="13" fill="#16A34A" stroke="#86EFAC" stroke-width="2"/>
+    <path d="M194 276 L198 280 L207 271" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Lower Golden Banner Ribbon -->
+  <g filter="url(#sealShadow)">
+    <path d="
+      M 50 310
+      L 350 310
+      L 334 332
+      L 350 354
+      L 50 354
+      L 66 332 Z"
+      fill="url(#ribbonGrad)" stroke="#854D0E" stroke-width="1.5"/>
+    <text x="200" y="339" text-anchor="middle" font-family="'Prompt', 'Plus Jakarta Sans', sans-serif" font-size="17" font-weight="800" fill="#713F12" letter-spacing="0.8">
+      GREEN PROTECH NATURE
+    </text>
+  </g>
+</svg>

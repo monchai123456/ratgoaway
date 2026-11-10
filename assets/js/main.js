@@ -194,6 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 5. Knowledge Base Articles Modal
   const articlesData = {
     article1: {
+      image: 'assets/images/article-home-organize.jpg',
       title: 'สารพัดวิธีกำจัดหนูแบบไม่ต้องฆ่าแกงกัน เพื่อบ้านสวยๆ ของเรา',
       content: `
         <p>"หนูบุกบ้าน" คงเป็นปัญหาที่หนักอกหนักใจเจ้าของบ้านทุกๆ คนอย่างไม่ต้องสงสัย เพราะหนูเป็นพาหะของความสกปรกและเชื้อโรค และที่สำคัญทำให้บ้านสวยๆ ของเราเสียหาย วันนี้เรามีวิธีกำจัดและขับไล่หนูออกไปจากบ้านโดยไม่ต้องฆ่ามาฝากกันครับ</p>
@@ -214,6 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
       `
     },
     article2: {
+      image: 'assets/images/article-herbal-peppermint.jpg',
       title: '10 วิธีไล่หนูออกจากบ้านโดยไม่ต้องฆ่า',
       content: `
         <p>หลายบ้านอาจเคยได้ยินเสียงร้องจี๊ดๆ หรือเสียงฝีเท้าวิ่งไป-มาอยู่บนฝ้าเพดาน ลองมาดู 10 วิธีไล่หนูออกจากบ้านอย่างปลอดภัยกันครับ:</p>
@@ -232,6 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
       `
     },
     article3: {
+      image: 'assets/images/article-pest-sanitation.jpg',
       title: 'การควบคุมและกำจัดหนูอย่างถูกวิธี ตามหลักสุขาภิบาล',
       content: `
         <p>หนูเป็นสัตว์ค่อนข้างฉลาด เคลื่อนตัวรวดเร็ว หลบหลีกอันตรายได้เก่ง และแพร่พันธุ์ได้อย่างรวดเร็ว (หนูอายุประมาณ 3 เดือนสามารถผสมพันธุ์ ตั้งท้องนาน 19–21 วัน และออกลูกครอกละ 6–10 ตัว) การป้องกันและกำจัดให้ได้ผลจึงต้องดำเนินการควบคู่กัน 2 แนวทางหลัก คือ:</p>
@@ -260,7 +263,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const key = btn.getAttribute('data-article');
       const data = articlesData[key];
       if (data && modalBackdrop && modalBody) {
-        modalBody.innerHTML = `<h3>${data.title}</h3>${data.content}`;
+        modalBody.innerHTML = `
+          <img src="${data.image}" alt="${data.title}" style="width:100%;height:220px;object-fit:cover;border-radius:14px;margin-bottom:18px;">
+          <h3>${data.title}</h3>
+          ${data.content}
+        `;
         modalBackdrop.classList.add('open');
       }
     });
@@ -277,30 +284,103 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 6. Contact Form Handler (Static GitHub Pages compatible -> Opens Line / Mailto / Summary)
+  // 6. Contact Form Handler (Direct AJAX Submission to Email via FormSubmit)
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
+      const submitBtn = contactForm.querySelector('.btn-submit-form');
+      const statusBox = document.getElementById('formStatus');
+
       const name = document.getElementById('custName').value.trim();
       const phone = document.getElementById('custPhone').value.trim();
       const service = document.getElementById('custService').value;
       const msg = document.getElementById('custMsg').value.trim();
 
-      const subject = encodeURIComponent(`ติดต่อสอบถาม ${service} - คุณ${name}`);
-      const body = encodeURIComponent(
-        `ชื่อผู้ติดต่อ: ${name}\nเบอร์โทรศัพท์: ${phone}\nบริการที่สนใจ: ${service}\nรายละเอียดเพิ่มเติม:\n${msg}`
-      );
-
-      // Show friendly feedback message and trigger email or copy
-      const statusBox = document.getElementById('formStatus');
-      if (statusBox) {
-        statusBox.style.display = 'block';
-        statusBox.innerHTML = `
-          <strong>เตรียมข้อมูลเรียบร้อยแล้ว!</strong> กำลังเปิดโปรแกรมอีเมลของคุณเพื่อส่งถึง <code>greenprotechnature@gmail.com</code> หรือคุณสามารถโทรสายด่วน <a href="tel:0813440968" style="text-decoration:underline;font-weight:700;">081-344-0968</a> / แอดไลน์ <a href="https://line.me/ti/p/~greenprotect" target="_blank" style="text-decoration:underline;font-weight:700;">@greenprotect</a> ได้ทันทีครับ
-        `;
+      if (!name || !phone || !msg) {
+        alert('กรุณากรอกข้อมูลให้ครบถ้วนก่อนส่งครับ');
+        return;
       }
-      window.location.href = `mailto:greenprotechnature@gmail.com?subject=${subject}&body=${body}`;
+
+      // Show loading indicator on button
+      const originalBtnHTML = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" style="animation:spin 1s linear infinite; display:inline-block; vertical-align:middle; margin-right:8px;"><circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle><path d="M12 2a10 10 0 0 1 10 10"></path></svg>
+        กำลังส่งข้อมูลเข้าอีเมล...
+      `;
+
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/greenprotechnature@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            'ชื่อผู้ติดต่อ': name,
+            'เบอร์โทรศัพท์': phone,
+            'บริการหรือสินค้าที่สนใจ': service,
+            'รายละเอียดปัญหาและพื้นที่': msg,
+            '_subject': `[RAT TERMINATOR] ขอนัดสำรวจพื้นที่ใหม่ - คุณ${name} (${phone})`,
+            '_template': 'table',
+            '_captcha': 'false'
+          })
+        });
+
+        if (response.ok) {
+          if (statusBox) {
+            statusBox.style.display = 'block';
+            statusBox.style.background = '#ECFDF5';
+            statusBox.style.color = '#065F46';
+            statusBox.style.border = '1.5px solid #A7F3D0';
+            statusBox.innerHTML = `
+              <div style="display:flex;align-items:flex-start;gap:12px;">
+                <span style="font-size:1.6rem;line-height:1;">✅</span>
+                <div style="flex:1;">
+                  <strong style="font-size:1.05rem;color:#047857;display:block;margin-bottom:4px;">ส่งข้อมูลไปยังอีเมลเรียบร้อยแล้ว!</strong>
+                  <p style="margin:0 0 10px 0;font-size:0.9rem;color:#065F46;line-height:1.55;">
+                    ขอบคุณ <strong>คุณ${name}</strong> ทางทีมงาน RAT TERMINATOR ได้รับข้อมูลเรียบร้อยแล้ว และจะติดต่อกลับที่เบอร์ <strong>${phone}</strong> โดยเร็วที่สุดครับ
+                  </p>
+                  <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
+                    <span style="font-size:0.82rem;color:#047857;font-weight:700;">หากต้องการปรึกษาด่วน:</span>
+                    <a href="tel:0813440968" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#059669;color:#fff;border-radius:9999px;font-size:0.8rem;font-weight:700;text-decoration:none;">📞 081-344-0968</a>
+                    <a href="https://line.me/ti/p/~greenprotect" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#06C755;color:#fff;border-radius:9999px;font-size:0.8rem;font-weight:700;text-decoration:none;">💬 LINE: 095-121-1422</a>
+                  </div>
+                </div>
+              </div>
+            `;
+          }
+          contactForm.reset();
+        } else {
+          throw new Error('Server response was not ok');
+        }
+      } catch (err) {
+        if (statusBox) {
+          statusBox.style.display = 'block';
+          statusBox.style.background = '#FEF2F2';
+          statusBox.style.color = '#991B1B';
+          statusBox.style.border = '1.5px solid #FECACA';
+          statusBox.innerHTML = `
+            <div style="display:flex;align-items:flex-start;gap:12px;">
+              <span style="font-size:1.6rem;line-height:1;">⚠️</span>
+              <div style="flex:1;">
+                <strong style="font-size:0.98rem;color:#B91C1C;display:block;margin-bottom:4px;">ไม่สามารถส่งข้อมูลอัตโนมัติได้ชั่วคราว</strong>
+                <p style="margin:0 0 10px 0;font-size:0.88rem;color:#7F1D1D;line-height:1.5;">
+                  ไม่ต้องกังวลครับ คุณสามารถโทรสายด่วนหรือส่งภาพปัญหาหน้างานผ่าน LINE เพื่อให้เจ้าหน้าที่ประเมินและนัดสำรวจได้ทันทีครับ
+                </p>
+                <div style="display:flex;flex-wrap:wrap;gap:8px;">
+                  <a href="tel:0813440968" style="padding:6px 12px;background:#DC2626;color:#fff;border-radius:9999px;font-size:0.8rem;font-weight:700;text-decoration:none;">📞 โทร 081-344-0968</a>
+                  <a href="https://line.me/ti/p/~greenprotect" target="_blank" rel="noopener" style="padding:6px 12px;background:#06C755;color:#fff;border-radius:9999px;font-size:0.8rem;font-weight:700;text-decoration:none;">💬 แอด LINE: 095-121-1422</a>
+                </div>
+              </div>
+            </div>
+          `;
+        }
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnHTML;
+      }
     });
   }
 });

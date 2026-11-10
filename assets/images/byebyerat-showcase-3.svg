@@ -1,105 +1,101 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" fill="none">
   <defs>
     <linearGradient id="bgGrad3" x1="0" y1="0" x2="800" y2="800" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#F0FDFA"/>
-      <stop offset="100%" stop-color="#E2F8F3"/>
+      <stop offset="0%" stop-color="#F4FAF7"/>
+      <stop offset="100%" stop-color="#E8F6F0"/>
     </linearGradient>
     <linearGradient id="headerBar" x1="120" y1="60" x2="680" y2="140" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#0D9488"/>
-      <stop offset="100%" stop-color="#115E59"/>
+      <stop offset="0%" stop-color="#1E6B3B"/>
+      <stop offset="100%" stop-color="#144626"/>
     </linearGradient>
-    <linearGradient id="waxCube3Top" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#67E8F9"/>
-      <stop offset="100%" stop-color="#2DD4BF"/>
-    </linearGradient>
-    <linearGradient id="waxCube3Left" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#22D3EE"/>
-      <stop offset="100%" stop-color="#0D9488"/>
-    </linearGradient>
-    <linearGradient id="waxCube3Right" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0D9488"/>
-      <stop offset="100%" stop-color="#0F766E"/>
+    <linearGradient id="iconBgGrad" x1="0" y1="0" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E8F5E9"/>
+      <stop offset="100%" stop-color="#C8E6C9"/>
     </linearGradient>
     <filter id="boxShadow3" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#0F4C45" flood-opacity="0.1"/>
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0F4C45" flood-opacity="0.08"/>
     </filter>
   </defs>
 
   <rect width="800" height="800" fill="url(#bgGrad3)"/>
 
-  <!-- Main White Container Card -->
+  <!-- Main Container Card -->
   <g filter="url(#boxShadow3)">
-    <rect x="44" y="44" width="712" height="712" rx="36" fill="#FFFFFF" stroke="#99F6E4" stroke-width="2"/>
+    <rect x="44" y="44" width="712" height="712" rx="32" fill="#FFFFFF" stroke="#D1E7D8" stroke-width="2"/>
   </g>
 
   <!-- Top Header Banner -->
-  <path d="M44 80 C44 60, 60 44, 80 44 L720 44 C740 44, 756 60, 756 80 L756 156 L44 156 Z" fill="url(#headerBar)"/>
-  <text x="400" y="96" text-anchor="middle" font-family="'Prompt', 'Plus Jakarta Sans', sans-serif" font-size="27" font-weight="800" fill="#FFFFFF">
+  <path d="M44 76 C44 58, 58 44, 76 44 L724 44 C742 44, 756 58, 756 76 L756 160 L44 160 Z" fill="url(#headerBar)"/>
+  <text x="400" y="98" text-anchor="middle" font-family="'Prompt', 'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">
     จุดวางแนะนำ &amp; วิธีใช้ Bye Bye Rat
   </text>
-  <text x="400" y="130" text-anchor="middle" font-family="'Prompt', sans-serif" font-size="16" font-weight="500" fill="#CCFBF1">
+  <text x="400" y="134" text-anchor="middle" font-family="'Prompt', sans-serif" font-size="16.5" font-weight="500" fill="#E8F5E9">
     วางในบริเวณที่หนูรบกวน ทนแดด ทนฝน ใช้งานได้ทั้งในร่มและกลางแจ้ง
   </text>
 
   <!-- 4 Placement Zones Grid -->
   <!-- Zone 1: บนฝ้าเพดาน -->
-  <g transform="translate(82, 188)">
-    <rect width="302" height="162" rx="22" fill="#F0FDFA" stroke="#CCFBF1" stroke-width="1.5"/>
-    <circle cx="48" cy="52" r="26" fill="#0D9488"/>
-    <text x="48" y="61" text-anchor="middle" font-size="24">🏠</text>
-    <text x="90" y="46" font-family="'Prompt', sans-serif" font-size="19" font-weight="700" fill="#0F766E">1. บนฝ้าเพดาน / ช่องชาร์ป</text>
-    <text x="90" y="72" font-family="'Prompt', sans-serif" font-size="14" fill="#475569">จุดซ่อนตัวและทางวิ่งหลักของหนู</text>
-    <text x="26" y="112" font-family="'Prompt', sans-serif" font-size="14.5" fill="#1E293B">• โยนหรือวางก้อนไล่หนูไว้เหนือฝ้า</text>
-    <text x="26" y="138" font-family="'Prompt', sans-serif" font-size="14.5" fill="#1E293B">• ลดเสียงหนูวิ่งรบกวนตอนกลางคืน</text>
+  <g transform="translate(80, 192)">
+    <rect width="308" height="170" rx="20" fill="#F8FCF9" stroke="#CFE8D7" stroke-width="1.5"/>
+    <rect x="20" y="22" width="52" height="52" rx="14" fill="url(#iconBgGrad)"/>
+    <!-- House / Ceiling Icon SVG -->
+    <path d="M46 34L29 47H34V61H58V47H63L46 34Z" fill="#1E6B3B"/>
+    <text x="84" y="45" font-family="'Prompt', sans-serif" font-size="18.5" font-weight="700" fill="#163B23">1. บนฝ้าเพดาน / ช่องชาร์ป</text>
+    <text x="84" y="68" font-family="'Prompt', sans-serif" font-size="14" font-weight="500" fill="#526E5C">จุดซ่อนตัวและทางวิ่งหลักของหนู</text>
+    <text x="24" y="115" font-family="'Prompt', sans-serif" font-size="14.5" font-weight="600" fill="#23382B">• โยนหรือวางก้อนไล่หนูไว้เหนือฝ้า</text>
+    <text x="24" y="142" font-family="'Prompt', sans-serif" font-size="14.5" font-weight="600" fill="#23382B">• ลดเสียงหนูวิ่งรบกวนตอนกลางคืน</text>
   </g>
 
-  <!-- Zone 2: ห้องครัว & ตู้เก็บอาหาร -->
-  <g transform="translate(416, 188)">
-    <rect width="302" height="162" rx="22" fill="#F0FDFA" stroke="#CCFBF1" stroke-width="1.5"/>
-    <circle cx="48" cy="52" r="26" fill="#0D9488"/>
-    <text x="48" y="61" text-anchor="middle" font-size="24">🍽️</text>
-    <text x="90" y="46" font-family="'Prompt', sans-serif" font-size="19" font-weight="700" fill="#0F766E">2. ห้องครัว / ใต้ซิงค์ล้างจาน</text>
-    <text x="90" y="72" font-family="'Prompt', sans-serif" font-size="14" fill="#475569">ป้องกันหนูมาคุ้ยหาเศษอาหาร</text>
-    <text x="26" y="112" font-family="'Prompt', sans-serif" font-size="14.5" fill="#1E293B">• ปลอดสารพิษ ไม่มีสารเคมีตกค้าง</text>
-    <text x="26" y="138" font-family="'Prompt', sans-serif" font-size="14.5" fill="#1E293B">• ลดกลิ่นฉี่และขี้หนูในพื้นที่เตรียมอาหาร</text>
+  <!-- Zone 2: ห้องครัว & ใต้ซิงค์ล้างจาน -->
+  <g transform="translate(412, 192)">
+    <rect width="308" height="170" rx="20" fill="#F8FCF9" stroke="#CFE8D7" stroke-width="1.5"/>
+    <rect x="20" y="22" width="52" height="52" rx="14" fill="url(#iconBgGrad)"/>
+    <!-- Kitchen / Utensils Icon SVG -->
+    <path d="M36 34V46H38V60H42V46H44V34H42V42H40V34H38V42H36V34ZM54 34C51 34 49 37 49 41C49 45 52 47 52 60H56V34H54Z" fill="#1E6B3B"/>
+    <text x="84" y="45" font-family="'Prompt', sans-serif" font-size="18.5" font-weight="700" fill="#163B23">2. ห้องครัว / ใต้ซิงค์ล้างจาน</text>
+    <text x="84" y="68" font-family="'Prompt', sans-serif" font-size="14" font-weight="500" fill="#526E5C">ป้องกันหนูมาคุ้ยหาเศษอาหาร</text>
+    <text x="24" y="115" font-family="'Prompt', sans-serif" font-size="14.5" font-weight="600" fill="#23382B">• ปลอดสารพิษ ไม่มีสารเคมีตกค้าง</text>
+    <text x="24" y="142" font-family="'Prompt', sans-serif" font-size="14.5" font-weight="600" fill="#23382B">• ลดกลิ่นฉี่และขี้หนูในพื้นที่อาหาร</text>
   </g>
 
-  <!-- Zone 3: ห้องเก็บของ & ตู้ไฟ -->
-  <g transform="translate(82, 376)">
-    <rect width="302" height="162" rx="22" fill="#F0FDFA" stroke="#CCFBF1" stroke-width="1.5"/>
-    <circle cx="48" cy="52" r="26" fill="#0D9488"/>
-    <text x="48" y="61" text-anchor="middle" font-size="24">📦</text>
-    <text x="90" y="46" font-family="'Prompt', sans-serif" font-size="19" font-weight="700" fill="#0F766E">3. ห้องเก็บของ / หลังตู้เย็น</text>
-    <text x="90" y="72" font-family="'Prompt', sans-serif" font-size="14" fill="#475569">ป้องกันหนูกัดแทะสายไฟและสิ่งของ</text>
-    <text x="26" y="112" font-family="'Prompt', sans-serif" font-size="14.5" fill="#1E293B">• วางตามมุมอับ ซอกตู้ หรือใกล้สายไฟ</text>
-    <text x="26" y="138" font-family="'Prompt', sans-serif" font-size="14.5" fill="#1E293B">• ป้องกันเครื่องใช้ไฟฟ้าเสียหาย</text>
+  <!-- Zone 3: ห้องเก็บของ / หลังตู้เย็น -->
+  <g transform="translate(80, 386)">
+    <rect width="308" height="170" rx="20" fill="#F8FCF9" stroke="#CFE8D7" stroke-width="1.5"/>
+    <rect x="20" y="22" width="52" height="52" rx="14" fill="url(#iconBgGrad)"/>
+    <!-- Box / Package Icon SVG -->
+    <path d="M46 34L30 42L46 50L62 42L46 34ZM30 45V59L45 66V52L30 45ZM62 45L47 52V66L62 59V45Z" fill="#1E6B3B"/>
+    <text x="84" y="45" font-family="'Prompt', sans-serif" font-size="18.5" font-weight="700" fill="#163B23">3. ห้องเก็บของ / หลังตู้เย็น</text>
+    <text x="84" y="68" font-family="'Prompt', sans-serif" font-size="14" font-weight="500" fill="#526E5C">ป้องกันหนูกัดแทะสายไฟและของ</text>
+    <text x="24" y="115" font-family="'Prompt', sans-serif" font-size="14.5" font-weight="600" fill="#23382B">• วางตามมุมอับ ซอกตู้ หรือใกล้สายไฟ</text>
+    <text x="24" y="142" font-family="'Prompt', sans-serif" font-size="14.5" font-weight="600" fill="#23382B">• ป้องกันเครื่องใช้ไฟฟ้าเสียหาย</text>
   </g>
 
-  <!-- Zone 4: โรงรถ & รอบบ้านกลางแจ้ง -->
-  <g transform="translate(416, 376)">
-    <rect width="302" height="162" rx="22" fill="#F0FDFA" stroke="#CCFBF1" stroke-width="1.5"/>
-    <circle cx="48" cy="52" r="26" fill="#0D9488"/>
-    <text x="48" y="61" text-anchor="middle" font-size="24">🚗</text>
-    <text x="90" y="46" font-family="'Prompt', sans-serif" font-size="19" font-weight="700" fill="#0F766E">4. โรงรถ / พื้นที่กลางแจ้ง</text>
-    <text x="90" y="72" font-family="'Prompt', sans-serif" font-size="14" fill="#475569">ทนแดด ทนฝน ไม่ละลายน้ำง่าย</text>
-    <text x="26" y="112" font-family="'Prompt', sans-serif" font-size="14.5" fill="#1E293B">• วางใกล้ถังขยะ ทางเดินรอบบ้าน</text>
-    <text x="26" y="138" font-family="'Prompt', sans-serif" font-size="14.5" fill="#1E293B">• หากพื้นที่ใหญ่ ควรวางกระจายหลายก้อน</text>
+  <!-- Zone 4: โรงรถ / พื้นที่กลางแจ้ง -->
+  <g transform="translate(412, 386)">
+    <rect width="308" height="170" rx="20" fill="#F8FCF9" stroke="#CFE8D7" stroke-width="1.5"/>
+    <rect x="20" y="22" width="52" height="52" rx="14" fill="url(#iconBgGrad)"/>
+    <!-- Car / Garage Icon SVG -->
+    <path d="M35 52C33.5 52 32 53.5 32 55C32 56.5 33.5 58 35 58C36.5 58 38 56.5 38 55C38 53.5 36.5 52 35 52ZM57 52C55.5 52 54 53.5 54 55C54 56.5 55.5 58 57 58C58.5 58 60 56.5 60 55C60 53.5 58.5 52 57 52ZM32 46L36 37H56L60 46V57H59C58.5 55 56.5 53.5 54 53.5C51.5 53.5 49.5 55 49 57H43C42.5 55 40.5 53.5 38 53.5C35.5 53.5 33.5 55 33 57H32V46ZM38 44H54L51.5 39H40.5L38 44Z" fill="#1E6B3B"/>
+    <text x="84" y="45" font-family="'Prompt', sans-serif" font-size="18.5" font-weight="700" fill="#163B23">4. โรงรถ / พื้นที่กลางแจ้ง</text>
+    <text x="84" y="68" font-family="'Prompt', sans-serif" font-size="14" font-weight="500" fill="#526E5C">ทนแดด ทนฝน ไม่ละลายน้ำง่าย</text>
+    <text x="24" y="115" font-family="'Prompt', sans-serif" font-size="14.5" font-weight="600" fill="#23382B">• วางใกล้ถังขยะ หรือทางเดินรอบบ้าน</text>
+    <text x="24" y="142" font-family="'Prompt', sans-serif" font-size="14.5" font-weight="600" fill="#23382B">• หากพื้นที่ใหญ่ ควรวางกระจายหลายก้อน</text>
   </g>
 
-  <!-- Bottom Usage Steps Strip -->
-  <rect x="82" y="568" width="636" height="146" rx="24" fill="#132A1E"/>
-  <g transform="translate(106, 595)">
-    <path d="M35 4L66 22L35 40L4 22L35 4Z" fill="url(#waxCube3Top)"/>
-    <path d="M4 22L35 40V76L4 58V22Z" fill="url(#waxCube3Left)"/>
-    <path d="M66 22L35 40V76L66 58V22Z" fill="url(#waxCube3Right)"/>
+  <!-- Bottom Tip Banner -->
+  <g transform="translate(80, 580)">
+    <rect width="640" height="136" rx="20" fill="#143520"/>
+    <!-- Lightbulb Icon SVG -->
+    <circle cx="50" cy="50" r="24" fill="#2E7D4F"/>
+    <path d="M50 36C45 36 41 40 41 45C41 48 43 51 45 53V56H55V53C57 51 59 48 59 45C59 40 55 36 50 36ZM47 58H53V59H47V58Z" fill="#FFFFFF"/>
+    <text x="88" y="46" font-family="'Prompt', sans-serif" font-size="19" font-weight="800" fill="#A3E635">
+      คำแนะนำการใช้งานเพื่อประสิทธิภาพสูงสุด
+    </text>
+    <text x="88" y="74" font-family="'Prompt', sans-serif" font-size="14.5" font-weight="500" fill="#FFFFFF">
+      • 1 ก้อน ครอบคลุมพื้นที่ประมาณ 3 ตารางเมตร • เปลี่ยนก้อนใหม่เมื่อกลิ่นเริ่มจางลง
+    </text>
+    <text x="88" y="100" font-family="'Prompt', sans-serif" font-size="14.5" font-weight="500" fill="#D1E7D8">
+      • หากเปิดซองแล้วใช้ไม่หมด ให้ปิดซองเก็บในที่แห้งมิดชิด • ล้างมือให้สะอาดหลังหยิบจับ
+    </text>
   </g>
-  <text x="200" y="615" font-family="'Prompt', sans-serif" font-size="18.5" font-weight="700" fill="#A3E635">
-    💡 คำแนะนำการใช้งานเพื่อประสิทธิภาพสูงสุด
-  </text>
-  <text x="200" y="646" font-family="'Prompt', sans-serif" font-size="15" fill="#FFFFFF">
-    • 1 ก้อน ครอบคลุมพื้นที่ประมาณ 3 ตารางเมตร • เปลี่ยนก้อนใหม่เมื่อกลิ่นเริ่มจางลง
-  </text>
-  <text x="200" y="674" font-family="'Prompt', sans-serif" font-size="15" fill="#A7F3D0">
-    • เปิดซองแล้วใช้ไม่หมด ให้ปิดซองเก็บในที่แห้งมิดชิด • ล้างมือให้สะอาดหลังหยิบจับทุกครั้ง
-  </text>
 </svg>
