@@ -1,45 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.ratterminator.com/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-10T11:58:00+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.ratterminator.com/#service</loc>
-    <lastmod>2026-11-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.ratterminator.com/#byebyerat</loc>
-    <lastmod>2026-11-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.ratterminator.com/#process</loc>
-    <lastmod>2026-11-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.ratterminator.com/#faq</loc>
-    <lastmod>2026-11-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.ratterminator.com/#articles</loc>
-    <lastmod>2026-11-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.ratterminator.com/#contact</loc>
-    <lastmod>2026-11-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+
+    <!-- Key Visual Images for Google Image Indexing -->
+    <image:image>
+      <image:loc>https://www.ratterminator.com/assets/images/hero-eco-home.jpg</image:loc>
+      <image:title>RAT TERMINATOR บริการกำจัดหนูด้วยสมุนไพรนาโน ปลอดสารพิษ 100%</image:title>
+      <image:caption>บริการกำจัดหนูด้วยอาหารหนูสมุนไพร ปลอดภัยต่อเด็กและสัตว์เลี้ยง สำรวจฟรี รับประกันผลงาน</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.ratterminator.com/assets/images/byebyerat-showcase-1.svg</image:loc>
+      <image:title>ก้อนสมุนไพรไล่หนู Bye Bye Rat สารสกัดจากธรรมชาติ</image:title>
+      <image:caption>ก้อนไล่หนูสารสกัดเปปเปอร์มินต์เข้มข้น ผสมพาราฟินแว็กซ์ ทนแดดทนฝน ไร้สารพิษ บรรจุ 8 ก้อน</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.ratterminator.com/assets/images/nano-herb-ingredients.jpg</image:loc>
+      <image:title>นวัตกรรมอาหารหนูสมุนไพร Nano Enzyme สารสกัดธรรมชาตินำเข้าจาก USA</image:title>
+      <image:caption>ส่วนประกอบอาหารหนูสมุนไพร 4 ชนิด มันสำปะหลัง ตะบองเพชรทะเลทราย ขมิ้นชัน และการบูร</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.ratterminator.com/assets/images/process-step-survey.jpg</image:loc>
+      <image:title>เจ้าหน้าที่ผู้เชี่ยวชาญเข้าสำรวจพื้นที่และประเมินร่องรอยหนูฟรี</image:title>
+      <image:caption>ขั้นตอนที่ 1 สำรวจพื้นที่ภายในและภายนอกอาคาร ตรวจร่องรอย รูหนู และทางเดินหนูโดยไม่มีค่าใช้จ่าย</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.ratterminator.com/assets/images/process-step-placement.jpg</image:loc>
+      <image:title>การวางเหยื่ออาหารหนูสมุนไพร Nano Enzyme ในจุดยุทธศาสตร์</image:title>
+      <image:caption>ขั้นตอนที่ 2 กำหนดตำแหน่งจุดยุทธศาสตร์และวางอาหารหนูสมุนไพรในบริเวณที่เหมาะสม ปลอดภัย</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.ratterminator.com/assets/images/process-step-followup.jpg</image:loc>
+      <image:title>การตรวจเช็ค ติดตามผล และรับประกันผลงานบริการกำจัดหนู</image:title>
+      <image:caption>ขั้นตอนที่ 3 ตรวจเช็คอัตราการกินอาหารหนู ประเมินผลงานต่อเนื่อง และแนะนำการอุดรูทางเข้า-ออก</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.ratterminator.com/assets/images/client-boonthavorn-real.jpg</image:loc>
+      <image:title>โชว์รูม บริษัท เวิลด์ เซรามิค เซ็นเตอร์ จำกัด (บุญถาวร)</image:title>
+      <image:caption>ลูกค้าองค์กรชั้นนำที่ไว้วางใจบริการกำจัดหนูสมุนไพร RAT TERMINATOR ต่อเนื่อง</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.ratterminator.com/assets/images/client-moph-real.jpg</image:loc>
+      <image:title>สถาบันวิจัยสาธารณสุข Thailand MOPH – U.S. CDC Collaboration</image:title>
+      <image:caption>ศูนย์ความร่วมมือไทย-สหรัฐ ด้านสาธารณสุข ไว้วางใจมาตรฐานความปลอดภัยระดับสากล ปลอดสารพิษ</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.ratterminator.com/assets/images/client-reflection-real.jpg</image:loc>
+      <image:title>โครงการ รีเฟล็คชั่น จอมเทียนบีช พัทยา</image:title>
+      <image:caption>โครงการคอนโดมิเนียมไฮเอนด์ริมหาดจอมเทียน พัทยา วางใจการดูแลปกป้องสิ่งแวดล้อมและผู้อยู่อาศัย</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.ratterminator.com/assets/images/article-home-organize.jpg</image:loc>
+      <image:title>เคล็ดลับจัดเก็บบ้านและห้องครัวให้สะอาด ป้องกันหนู</image:title>
+      <image:caption>สารพัดวิธีกำจัดหนูแบบไม่ต้องฆ่าแกงกัน เพื่อบ้านสวยๆ ของเรา</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.ratterminator.com/assets/images/article-herbal-peppermint.jpg</image:loc>
+      <image:title>10 วิธีไล่หนูออกจากบ้านโดยไม่ต้องฆ่า สารสกัดเปปเปอร์มินต์ธรรมชาติ</image:title>
+      <image:caption>แนวทางจัดการหนูให้ย้ายออกจากบ้านอย่างสันติวิธี ไร้กลิ่นเน่า ด้วยสมุนไพรธรรมชาติ</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.ratterminator.com/assets/images/article-pest-sanitation.jpg</image:loc>
+      <image:title>คู่มือการควบคุมกำจัดหนูอย่างถูกวิธีตามหลักสุขาภิบาล</image:title>
+      <image:caption>แนวทางปรับปรุงสุขาภิบาลสิ่งแวดล้อมในอาคารควบคู่กับการใช้สมุนไพรนาโน ปลอดภัยระยะยาว</image:caption>
+    </image:image>
   </url>
 </urlset>
