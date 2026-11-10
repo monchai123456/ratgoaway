@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" fill="none">
+  <defs>
+    <!-- Studio Backdrop Gradients -->
+    <radialGradient id="studioBg" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#F0FDFA"/>
+      <stop offset="55%" stop-color="#CCFBF1"/>
+      <stop offset="100%" stop-color="#99F6E4"/>
+    </radialGradient>
+    <linearGradient id="podiumTop" x1="200" y1="540" x2="600" y2="620" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E6FFFA"/>
+    </linearGradient>
+    <linearGradient id="podiumSide" x1="160" y1="580" x2="640" y2="680" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#B2F5EA"/>
+      <stop offset="50%" stop-color="#81E6D9"/>
+      <stop offset="100%" stop-color="#4FD1C5"/>
+    </linearGradient>
+
+    <!-- Foil Pouch Gradients -->
+    <linearGradient id="pouchBody" x1="240" y1="140" x2="560" y2="590" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="28%" stop-color="#F1F5F9"/>
+      <stop offset="55%" stop-color="#E2E8F0"/>
+      <stop offset="80%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="pouchSheen" x1="250" y1="160" x2="480" y2="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="85%" stop-color="#0D9488" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="labelHeader" x1="285" y1="245" x2="515" y2="335" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D9488"/>
+      <stop offset="100%" stop-color="#0F766E"/>
+    </linearGradient>
+
+    <!-- 3D Wax Cube Gradients -->
+    <linearGradient id="waxTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#67E8F9"/>
+      <stop offset="100%" stop-color="#2DD4BF"/>
+    </linearGradient>
+    <linearGradient id="waxLeft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#0D9488"/>
+    </linearGradient>
+    <linearGradient id="waxRight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D9488"/>
+      <stop offset="100%" stop-color="#115E59"/>
+    </linearGradient>
+
+    <!-- Peppermint Leaf Gradient -->
+    <linearGradient id="mintLeafGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A3E635"/>
+      <stop offset="100%" stop-color="#15803D"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="pouchShadow" x="-15%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#0F4C45" flood-opacity="0.22"/>
+    </filter>
+    <filter id="cubeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#0A3A36" flood-opacity="0.26"/>
+    </filter>
+    <filter id="badgeShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0F4C45" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <!-- 1. Background -->
+  <rect width="800" height="800" fill="url(#studioBg)"/>
+
+  <!-- Decorative Aura Rings -->
+  <circle cx="400" cy="360" r="290" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="2" stroke-dasharray="10 12"/>
+  <circle cx="400" cy="360" r="235" stroke="#2DD4BF" stroke-opacity="0.3" stroke-width="1.5"/>
+
+  <!-- Top Header Pill -->
+  <g filter="url(#badgeShadow)">
+    <rect x="235" y="38" width="330" height="44" rx="22" fill="#FFFFFF"/>
+    <circle cx="262" cy="60" r="10" fill="#14B8A6"/>
+    <path d="M258 60L261 63L266.5 57.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="412" y="66" text-anchor="middle" font-family="'Prompt', 'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="700" fill="#0F766E">
+      ผลิตภัณฑ์ก้อนสมุนไพรไล่หนูธรรมชาติ
+    </text>
+  </g>
+
+  <!-- 2. Studio Podium Base -->
+  <ellipse cx="400" cy="645" rx="285" ry="48" fill="#0D9488" fill-opacity="0.16"/>
+  <path d="M150 580 C150 618, 650 618, 650 580 L650 622 C650 662, 150 662, 150 622 Z" fill="url(#podiumSide)"/>
+  <ellipse cx="400" cy="580" rx="250" ry="44" fill="url(#podiumTop)" stroke="#FFFFFF" stroke-width="3"/>
+
+  <!-- 3. Peppermint Leaves Behind Pouch (Left & Right) -->
+  <g opacity="0.92">
+    <path d="M230 520 C160 500, 130 430, 155 370 C205 385, 245 445, 230 520 Z" fill="url(#mintLeafGrad)"/>
+    <path d="M225 512 C195 470, 175 430, 162 385" stroke="#ECFCCB" stroke-width="3" stroke-linecap="round"/>
+    <path d="M580 515 C645 490, 675 425, 645 365 C595 380, 565 440, 580 515 Z" fill="url(#mintLeafGrad)"/>
+    <path d="M584 506 C610 465, 628 425, 638 380" stroke="#ECFCCB" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- 4. Realistic 3D Ziplock Foil Pouch -->
+  <g filter="url(#pouchShadow)">
+    <!-- Pouch Outer Shape -->
+    <path d="M255 145 C255 133, 265 125, 278 125 L522 125 C535 125, 545 133, 545 145 L562 560 C563 576, 550 588, 534 588 L266 588 C250 588, 237 576, 238 560 Z" fill="url(#pouchBody)" stroke="#FFFFFF" stroke-width="2.5"/>
+    <path d="M255 145 C255 133, 265 125, 278 125 L522 125 C535 125, 545 133, 545 145 L562 560 C563 576, 550 588, 534 588 L266 588 C250 588, 237 576, 238 560 Z" fill="url(#pouchSheen)"/>
+
+    <!-- Top Tear Notches & Ziplock Track -->
+    <circle cx="255" cy="162" r="5" fill="#CCFBF1"/>
+    <circle cx="545" cy="162" r="5" fill="#CCFBF1"/>
+    <line x1="258" y1="176" x2="542" y2="176" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+    <line x1="258" y1="183" x2="542" y2="183" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Modern Product Label on Pouch -->
+    <rect x="282" y="220" width="236" height="318" rx="22" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+    <path d="M282 242 C282 230, 292 220, 304 220 L496 220 C508 220, 518 230, 518 242 L518 318 L282 318 Z" fill="url(#labelHeader)"/>
+
+    <!-- Brand Name on Label -->
+    <text x="400" y="264" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Prompt', sans-serif" font-size="26" font-weight="800" letter-spacing="0.03em" fill="#FFFFFF">
+      BYE BYE RAT
+    </text>
+    <text x="400" y="292" text-anchor="middle" font-family="'Prompt', sans-serif" font-size="15.5" font-weight="600" fill="#CCFBF1">
+      ก้อนไล่หนู สารสกัดธรรมชาติ
+    </text>
+
+    <!-- Cube Graphic on Pouch Label -->
+    <g transform="translate(352, 336)">
+      <path d="M48 4L90 28L48 52L6 28L48 4Z" fill="url(#waxTop)"/>
+      <path d="M6 28L48 52V98L6 74V28Z" fill="url(#waxLeft)"/>
+      <path d="M90 28L48 52V98L90 74V28Z" fill="url(#waxRight)"/>
+      <path d="M6 28L48 52L90 28" stroke="#E0F2FE" stroke-width="1.5"/>
+    </g>
+
+    <!-- Ingredients & Pack Info on Label -->
+    <rect x="308" y="450" width="184" height="30" rx="15" fill="#F0FDFA" stroke="#99F6E4" stroke-width="1.2"/>
+    <text x="400" y="470" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Prompt', sans-serif" font-size="12.5" font-weight="700" fill="#0F766E">
+      Paraffin Wax • Peppermint
+    </text>
+    <text x="400" y="510" text-anchor="middle" font-family="'Prompt', sans-serif" font-size="15" font-weight="700" fill="#1E293B">
+      บรรจุ 8 ก้อน / ซองซิปล็อก
+    </text>
+  </g>
+
+  <!-- 5. Foreground 3D Crystalline Wax Cubes on Podium -->
+  <!-- Cube 1 (Left Front) -->
+  <g filter="url(#cubeShadow)" transform="translate(185, 475)">
+    <path d="M65 8L122 40L65 72L8 40L65 8Z" fill="url(#waxTop)"/>
+    <path d="M8 40L65 72V132L8 100V40Z" fill="url(#waxLeft)"/>
+    <path d="M122 40L65 72V132L122 100V40Z" fill="url(#waxRight)"/>
+    <path d="M8 40L65 72L122 40" stroke="#CCFBF1" stroke-width="2" stroke-linecap="round"/>
+    <path d="M65 72V132" stroke="#99F6E4" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Cube 2 (Right Front) -->
+  <g filter="url(#cubeShadow)" transform="translate(495, 465)">
+    <path d="M60 8L114 38L60 68L6 38L60 8Z" fill="url(#waxTop)"/>
+    <path d="M6 38L60 68V125L6 95V38Z" fill="url(#waxLeft)"/>
+    <path d="M114 38L60 68V125L114 95V38Z" fill="url(#waxRight)"/>
+    <path d="M6 38L60 68L114 38" stroke="#CCFBF1" stroke-width="2" stroke-linecap="round"/>
+    <path d="M60 68V125" stroke="#99F6E4" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Cube 3 (Center Front Small) -->
+  <g filter="url(#cubeShadow)" transform="translate(430, 520)">
+    <path d="M46 6L86 28L46 50L6 28L46 6Z" fill="url(#waxTop)"/>
+    <path d="M6 28L46 50V92L6 70V28Z" fill="url(#waxLeft)"/>
+    <path d="M86 28L46 50V92L86 70V28Z" fill="url(#waxRight)"/>
+    <path d="M6 28L46 50L86 28" stroke="#CCFBF1" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+
+  <!-- 6. Floating Feature Callout Badges -->
+  <!-- Left Callout -->
+  <g filter="url(#badgeShadow)" transform="translate(48, 220)">
+    <rect width="195" height="68" rx="18" fill="#FFFFFF"/>
+    <circle cx="36" cy="34" r="20" fill="#CCFBF1"/>
+    <text x="36" y="41" text-anchor="middle" font-size="20">🌿</text>
+    <text x="68" y="30" font-family="'Prompt', sans-serif" font-size="14.5" font-weight="700" fill="#0F766E">กลิ่นมิ้นท์สกัดเข้มข้น</text>
+    <text x="68" y="50" font-family="'Prompt', sans-serif" font-size="12.5" font-weight="500" fill="#475569">ปลอดสารพิษ 100%</text>
+  </g>
+
+  <!-- Right Callout -->
+  <g filter="url(#badgeShadow)" transform="translate(556, 220)">
+    <rect width="196" height="68" rx="18" fill="#FFFFFF"/>
+    <circle cx="36" cy="34" r="20" fill="#FEF3C7"/>
+    <text x="36" y="41" text-anchor="middle" font-size="20">☀️</text>
+    <text x="68" y="30" font-family="'Prompt', sans-serif" font-size="14.5" font-weight="700" fill="#1E293B">ทนแดด ทนฝน</text>
+    <text x="68" y="50" font-family="'Prompt', sans-serif" font-size="12.5" font-weight="500" fill="#475569">ครอบคลุม 3 ตร.ม./ก้อน</text>
+  </g>
+
+  <!-- Bottom Summary Banner -->
+  <g filter="url(#badgeShadow)" transform="translate(150, 692)">
+    <rect width="500" height="64" rx="32" fill="#0F766E"/>
+    <text x="250" y="39" text-anchor="middle" font-family="'Prompt', 'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">
+      ✨ 1 ซอง บรรจุ 8 ก้อน • วางบนฝ้า ห้องครัว ห้องเก็บของ หรือกลางแจ้ง
+    </text>
+  </g>
+</svg>

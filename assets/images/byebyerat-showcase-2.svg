@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" fill="none">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0" y1="0" x2="800" y2="800" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F0FDF4"/>
+      <stop offset="50%" stop-color="#E6FFFA"/>
+      <stop offset="100%" stop-color="#CCFBF1"/>
+    </linearGradient>
+    <linearGradient id="waxTop2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#67E8F9"/>
+      <stop offset="100%" stop-color="#14B8A6"/>
+    </linearGradient>
+    <linearGradient id="waxLeft2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#0D9488"/>
+    </linearGradient>
+    <linearGradient id="waxRight2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D9488"/>
+      <stop offset="100%" stop-color="#0F766E"/>
+    </linearGradient>
+    <filter id="cardDrop" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#0F4C45" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bgGrad2)"/>
+
+  <!-- Repelling Scent Waves From Center -->
+  <circle cx="400" cy="390" r="145" stroke="#14B8A6" stroke-opacity="0.45" stroke-width="2.5" stroke-dasharray="8 8"/>
+  <circle cx="400" cy="390" r="205" stroke="#14B8A6" stroke-opacity="0.28" stroke-width="2" stroke-dasharray="12 10"/>
+  <circle cx="400" cy="390" r="265" stroke="#14B8A6" stroke-opacity="0.15" stroke-width="2"/>
+
+  <!-- Header Title -->
+  <text x="400" y="76" text-anchor="middle" font-family="'Prompt', 'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#132A1E">
+    กลไกการออกฤทธิ์ของ <tspan fill="#0D9488">Bye Bye Rat</tspan>
+  </text>
+  <text x="400" y="110" text-anchor="middle" font-family="'Prompt', sans-serif" font-size="17" font-weight="500" fill="#4E6356">
+    ผสาน 2 พลังธรรมชาติ ป้องกันและขับไล่หนูโดยไม่ใช้สารเคมีอันตราย
+  </text>
+
+  <!-- Center Hero Cube -->
+  <g filter="url(#cardDrop)">
+    <circle cx="400" cy="390" r="112" fill="#FFFFFF" stroke="#99F6E4" stroke-width="3"/>
+    <g transform="translate(322, 304)">
+      <path d="M78 10L146 48L78 86L10 48L78 10Z" fill="url(#waxTop2)"/>
+      <path d="M10 48L78 86V162L10 124V48Z" fill="url(#waxLeft2)"/>
+      <path d="M146 48L78 86V162L146 124V48Z" fill="url(#waxRight2)"/>
+      <path d="M10 48L78 86L146 48" stroke="#E0F2FE" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M78 86V162" stroke="#99F6E4" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- 4 Feature Cards Around Center -->
+  <!-- Card 1: Top Left -->
+  <g filter="url(#cardDrop)" transform="translate(50, 165)">
+    <rect width="270" height="145" rx="22" fill="#FFFFFF" stroke="#CCFBF1" stroke-width="1.5"/>
+    <rect x="22" y="22" width="46" height="46" rx="14" fill="#DCFCE7"/>
+    <text x="45" y="53" text-anchor="middle" font-size="24">🌱</text>
+    <text x="82" y="44" font-family="'Plus Jakarta Sans', 'Prompt', sans-serif" font-size="18" font-weight="800" fill="#15803D">Peppermint Oil</text>
+    <text x="82" y="65" font-family="'Prompt', sans-serif" font-size="13.5" font-weight="600" fill="#4E6356">เปปเปอร์มิ้นท์สกัดเข้มข้น</text>
+    <text x="22" y="98" font-family="'Prompt', sans-serif" font-size="14" fill="#334155">ส่งกลิ่นสมุนไพรที่หนูไม่ชอบ</text>
+    <text x="22" y="120" font-family="'Prompt', sans-serif" font-size="14" fill="#334155">ทำให้หนูหนีห่างจากจุดที่วาง</text>
+  </g>
+
+  <!-- Card 2: Top Right -->
+  <g filter="url(#cardDrop)" transform="translate(480, 165)">
+    <rect width="270" height="145" rx="22" fill="#FFFFFF" stroke="#CCFBF1" stroke-width="1.5"/>
+    <rect x="22" y="22" width="46" height="46" rx="14" fill="#CCFBF1"/>
+    <text x="45" y="53" text-anchor="middle" font-size="24">🧊</text>
+    <text x="82" y="44" font-family="'Plus Jakarta Sans', 'Prompt', sans-serif" font-size="18" font-weight="800" fill="#0F766E">Paraffin Wax</text>
+    <text x="82" y="65" font-family="'Prompt', sans-serif" font-size="13.5" font-weight="600" fill="#4E6356">เนื้อแว็กซ์เกรดพรีเมียม</text>
+    <text x="22" y="98" font-family="'Prompt', sans-serif" font-size="14" fill="#334155">ช่วยกักเก็บและค่อยๆ ปล่อยกลิ่น</text>
+    <text x="22" y="120" font-family="'Prompt', sans-serif" font-size="14" fill="#334155">ทนแดด ทนฝน วางกลางแจ้งได้</text>
+  </g>
+
+  <!-- Card 3: Bottom Left -->
+  <g filter="url(#cardDrop)" transform="translate(50, 480)">
+    <rect width="270" height="145" rx="22" fill="#FFFFFF" stroke="#CCFBF1" stroke-width="1.5"/>
+    <rect x="22" y="22" width="46" height="46" rx="14" fill="#E0F2FE"/>
+    <text x="45" y="53" text-anchor="middle" font-size="24">📐</text>
+    <text x="82" y="44" font-family="'Prompt', sans-serif" font-size="18" font-weight="800" fill="#0369A1">ครอบคลุม 3 ตร.ม.</text>
+    <text x="82" y="65" font-family="'Prompt', sans-serif" font-size="13.5" font-weight="600" fill="#4E6356">กระจายกลิ่นรอบทิศทาง</text>
+    <text x="22" y="98" font-family="'Prompt', sans-serif" font-size="14" fill="#334155">เหมาะกับฝ้าเพดาน ห้องครัว</text>
+    <text x="22" y="120" font-family="'Prompt', sans-serif" font-size="14" fill="#334155">ห้องเก็บของ และห้องเครื่อง</text>
+  </g>
+
+  <!-- Card 4: Bottom Right -->
+  <g filter="url(#cardDrop)" transform="translate(480, 480)">
+    <rect width="270" height="145" rx="22" fill="#FFFFFF" stroke="#CCFBF1" stroke-width="1.5"/>
+    <rect x="22" y="22" width="46" height="46" rx="14" fill="#FEF3C7"/>
+    <text x="45" y="53" text-anchor="middle" font-size="24">🛡️</text>
+    <text x="82" y="44" font-family="'Prompt', sans-serif" font-size="18" font-weight="800" fill="#B45309">ลดเชื้อโรค &amp; มูลหนู</text>
+    <text x="82" y="65" font-family="'Prompt', sans-serif" font-size="13.5" font-weight="600" fill="#4E6356">บ้านสะอาด ปลอดภัยไร้สารพิษ</text>
+    <text x="22" y="98" font-family="'Prompt', sans-serif" font-size="14" fill="#334155">ลดการเกิดมูลและปัสสาวะหนู</text>
+    <text x="22" y="120" font-family="'Prompt', sans-serif" font-size="14" fill="#334155">ปลอดภัยต่อคนและสิ่งแวดล้อม</text>
+  </g>
+
+  <!-- Bottom Callout -->
+  <rect x="130" y="678" width="540" height="62" rx="31" fill="#132A1E"/>
+  <text x="400" y="716" text-anchor="middle" font-family="'Prompt', sans-serif" font-size="18" font-weight="600" fill="#A7F3D0">
+    📞 สั่งซื้อหรือสอบถามวิธีใช้งาน โทร / LINE: <tspan fill="#FFFFFF" font-weight="700">095-121-1422</tspan>
+  </text>
+</svg>

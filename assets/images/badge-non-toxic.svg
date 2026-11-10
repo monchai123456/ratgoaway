@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80" fill="none">
+  <defs>
+    <linearGradient id="shieldBg" x1="8" y1="6" x2="72" y2="74" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1E6F43"/>
+      <stop offset="100%" stop-color="#0F3E23"/>
+    </linearGradient>
+    <linearGradient id="shieldRim" x1="12" y1="10" x2="68" y2="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#A3E635"/>
+      <stop offset="100%" stop-color="#22C55E"/>
+    </linearGradient>
+    <linearGradient id="leafFill" x1="26" y1="24" x2="54" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#BEF264"/>
+      <stop offset="100%" stop-color="#65A30D"/>
+    </linearGradient>
+    <filter id="badgeShadow" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#114629" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Soft Rounded Square -->
+  <rect x="4" y="4" width="72" height="72" rx="20" fill="#ECFDF5"/>
+  <rect x="4.75" y="4.75" width="70.5" height="70.5" rx="19.25" stroke="#A7F3D0" stroke-width="1.5"/>
+
+  <!-- Protection Shield -->
+  <g filter="url(#badgeShadow)">
+    <path d="M40 12L62 20V37.5C62 52.5 52.4 63.8 40 68C27.6 63.8 18 52.5 18 37.5V20L40 12Z" fill="url(#shieldBg)"/>
+    <path d="M40 14.2L59.8 21.4V37.5C59.8 51.1 51.1 61.4 40 65.4C28.9 61.4 20.2 51.1 20.2 37.5V21.4L40 14.2Z" stroke="url(#shieldRim)" stroke-width="1.8" stroke-opacity="0.85"/>
+  </g>
+
+  <!-- Botanical Leaf Inside Shield -->
+  <path d="M30 48C28.5 36.5 34.5 26 49 23.5C50 36 42.5 46.5 30 48Z" fill="url(#leafFill)"/>
+  <path d="M29 49C34.5 43.5 40.5 36.5 47 26" stroke="#F7FEE7" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- Checkmark Badge Corner -->
+  <circle cx="57" cy="56" r="11" fill="#22C55E" stroke="#FFFFFF" stroke-width="2.5"/>
+  <path d="M52.5 56L55.5 59L62 52.5" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
