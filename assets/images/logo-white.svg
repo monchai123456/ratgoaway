@@ -1,38 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 56" width="340" height="56" fill="none">
   <defs>
-    <linearGradient id="shieldGradWMd" x1="2" y1="2" x2="52" y2="52" gradientUnits="userSpaceOnUse">
+    <linearGradient id="rgaShieldDark" x1="2" y1="2" x2="52" y2="52" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="60%" stop-color="#16A34A"/>
       <stop offset="100%" stop-color="#15803D"/>
     </linearGradient>
-    <linearGradient id="leafGradWMd" x1="12" y1="10" x2="42" y2="42" gradientUnits="userSpaceOnUse">
+
+    <linearGradient id="rgaLeafDark" x1="12" y1="10" x2="40" y2="42" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#BEF264"/>
-      <stop offset="100%" stop-color="#84CC16"/>
+      <stop offset="50%" stop-color="#86EFAC"/>
+      <stop offset="100%" stop-color="#4ADE80"/>
     </linearGradient>
-    <linearGradient id="orbitGradWMd" x1="6" y1="8" x2="48" y2="46" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#BEF264"/>
-      <stop offset="100%" stop-color="#6EE7B7" stop-opacity="0.35"/>
+
+    <linearGradient id="rgaArcDark" x1="8" y1="38" x2="48" y2="12" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#86EFAC" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#BEF264"/>
+      <stop offset="100%" stop-color="#FDE047"/>
     </linearGradient>
   </defs>
 
-  <rect x="2" y="2" width="52" height="52" rx="15" fill="url(#shieldGradWMd)"/>
-  <rect x="2.75" y="2.75" width="50.5" height="50.5" rx="14.25" stroke="#BEF264" stroke-opacity="0.4" stroke-width="1.5"/>
+  <rect x="2" y="2" width="52" height="52" rx="15" fill="url(#rgaShieldDark)"/>
+  <rect x="2.75" y="2.75" width="50.5" height="50.5" rx="14.25" stroke="#BEF264" stroke-opacity="0.5" stroke-width="1.5"/>
 
-  <ellipse cx="28" cy="28" rx="20" ry="11.5" transform="rotate(-32 28 28)" stroke="url(#orbitGradWMd)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="75 18"/>
-  <circle cx="12.5" cy="37" r="2.5" fill="#BEF264"/>
-  <circle cx="43.5" cy="18.5" r="2.2" fill="#6EE7B7"/>
+  <path d="M28 10C17.5 13.5 14 24.5 17 35C20.5 32 25 26.5 28 18C31 26.5 35.5 32 39 35C42 24.5 38.5 13.5 28 10Z" fill="url(#rgaLeafDark)" fill-opacity="0.3"/>
+  <path d="M17 37C15.5 25.5 22.5 15.5 36.5 13C37.5 25.5 30.5 36 17 37Z" fill="url(#rgaLeafDark)"/>
+  <path d="M17 37C24.5 30 29.5 23 36.5 13C30 35.5 23 37.5 17 37Z" fill="#064E3B" fill-opacity="0.45"/>
+  <path d="M16 38.5C21.5 33 28.5 25.5 35 15" stroke="#F7FEE7" stroke-width="2" stroke-linecap="round"/>
 
-  <path d="M18 37C16.5 26 23 15.5 37 13C38 25.5 31 36 18 37Z" fill="url(#leafGradWMd)"/>
-  <path d="M18 37C25 30 30 23.5 37 13C31 36 24 37.5 18 37Z" fill="#14532D" fill-opacity="0.48"/>
-  <path d="M17 38.5C22.5 33 29 25.5 35.5 15" stroke="#F7FEE7" stroke-width="2" stroke-linecap="round"/>
+  <path d="M11 41C18 44 28 43 37 36C43 31 46 23 46 15" stroke="url(#rgaArcDark)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="38 7"/>
+  <path d="M41 14.5L46.5 14.5L45.5 20" stroke="#FDE047" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <g font-family="'Plus Jakarta Sans', 'Prompt', -apple-system, BlinkMacSystemFont, sans-serif">
-    <text x="64" y="28" font-size="22.5" font-weight="900" letter-spacing="0.02em" fill="#FFFFFF">
-      RAT <tspan fill="#A3E635">TERMINATOR</tspan>
+  <circle cx="42" cy="37" r="2" fill="#BEF264"/>
+  <circle cx="11.5" cy="33" r="1.8" fill="#BEF264"/>
+
+  <!-- Brand Typography: RAT GO AWAY (White & Bright Lime for Dark Footer) -->
+  <g font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif">
+    <text x="65" y="27" font-size="24" font-weight="900" letter-spacing="0.02em">
+      <tspan fill="#FFFFFF">RAT</tspan> <tspan fill="#4ADE80">GO</tspan> <tspan fill="#BEF264">AWAY</tspan>
     </text>
-    <rect x="64" y="34.5" width="268" height="17" rx="8.5" fill="#143D28" stroke="#34D399" stroke-opacity="0.4" stroke-width="1"/>
-    <circle cx="74" cy="43" r="3.2" fill="#A3E635"/>
-    <text x="83" y="47" font-size="9.8" font-weight="700" letter-spacing="0.04em" fill="#D1FAE5">
-      สมุนไพรนาโนกำจัดหนู • ปลอดสารพิษ 100%
+
+    <rect x="65" y="34.5" width="215" height="17" rx="8.5" fill="#062E18" stroke="#34D399" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="74.5" cy="43" r="3.2" fill="#4ADE80"/>
+    <text x="83" y="47" font-family="'Prompt', -apple-system, sans-serif" font-size="9.6" font-weight="700" letter-spacing="0.03em" fill="#D1FAE5">
+      สมุนไพรนาโนไล่หนู • ปลอดภัย 100%
     </text>
   </g>
 </svg>

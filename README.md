@@ -1,6 +1,6 @@
-# 🌿 RAT TERMINATOR Website (Modernized Version)
+# 🌿 RAT GO AWAY Website (Modernized Version)
 
-เว็บไซต์ใหม่ของ **RAT TERMINATOR (www.ratterminator.com)** ออกแบบใหม่ให้ทันสมัย เรียบง่าย สบายตา รองรับทุกหน้าจอ (Responsive Mobile-First) และพร้อมใช้งานบน **GitHub Pages** ทันที
+เว็บไซต์ใหม่ของ **RAT GO AWAY (www.ratgoaway.com)** ออกแบบใหม่ให้ทันสมัย เรียบง่าย สบายตา รองรับทุกหน้าจอ (Responsive Mobile-First) และพร้อมใช้งานบน **GitHub Pages** ทันที
 
 ## ✨ จุดเด่นของเว็บไซต์ใหม่
 - **ดีไซน์เรียบง่าย สบายตา (Soft Botanical Minimalist)**: ใช้โทนสีเขียวใบไม้ธรรมชาติและขาวครีมสบายตา อ่านง่ายด้วยฟอนต์ `Prompt` และ `Plus Jakarta Sans`
@@ -17,12 +17,12 @@
 
 ## 🚀 วิธีนำขึ้นโฮสต์บน GitHub Pages
 
-1. สร้าง Repository ใหม่บน GitHub (เช่น `ratterminator`)
+1. สร้าง Repository ใหม่บน GitHub (เช่น `ratgoaway`)
 2. อัปโหลดหรือ Push โค้ดในโฟลเดอร์นี้ขึ้นไปยัง GitHub:
    ```bash
    git init
    git add .
-   git commit -m "Initial commit: Modernized Rat Terminator website"
+   git commit -m "Initial commit: Modernized Ratgoaway website"
    git branch -M main
    git remote add origin https://github.com/<ชื่อผู้ใช้ของคุณ>/<ชื่อ-repo>.git
    git push -u origin main
@@ -31,4 +31,4 @@
 4. ในหัวข้อ **Build and deployment** -> **Source** เลือกเป็น:
    - **Deploy from a branch** (เลือก branch `main` และโฟลเดอร์ `/ (root)`) **หรือ**
    - **GitHub Actions** (มีไฟล์ `.github/workflows/deploy.yml` เตรียมไว้ให้แล้ว)
-5. *(ตัวเลือกเสริม)* หากต้องการผูกโดเมน `www.ratterminator.com` ให้ตั้งค่า DNS (CNAME Record) ชี้มาที่ `<ชื่อผู้ใช้ของคุณ>.github.io` (ไฟล์ `CNAME` ถูกเตรียมไว้แล้ว หากยังไม่ได้ผูกโดเมนสามารถลบไฟล์ `CNAME` ออกชั่วคราวได้)
+5. *(ตัวเลือกเสริม)* หากต้องการผูกโดเมน `www.ratgoaway.com` ให้ตั้งค่า DNS (CNAME Record) ชี้มาที่ `<ชื่อผู้ใช้ของคุณ>.github.io` (ไฟล์ `CNAME` ถูกเตรียมไว้แล้ว หากยังไม่ได้ผูกโดเมนสามารถลบไฟล์ `CNAME` ออกชั่วคราวได้)

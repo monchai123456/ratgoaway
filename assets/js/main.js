@@ -1,5 +1,5 @@
 /* ==========================================================================
-   RAT TERMINATOR - Interactive Scripts & Articles Modal
+   RAT GO AWAY - Interactive Scripts & Articles Modal
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <li><strong>2.1 วิธีกล:</strong> ใช้กรงดักหรือกับดักวางชิดฝาผนังตามทางเดินของหนู</li>
           <li><strong>2.2 การใช้อาหารหนูสมุนไพรนาโนเทคโนโลยี (แนะนำ):</strong> เป็นวิธีที่ได้รับความนิยมสูงเพราะปลอดภัย 100% สำหรับมนุษย์และสัตว์เลี้ยง ไม่มีสารเคมีตกค้างในบ้าน โดยออกฤทธิ์ต่อระบบประสาทการรับรู้และระบบย่อยอาหารของหนู ทำให้หนูหนีออกจากบ้านและค่อยๆ สลบภายใน 7–10 วัน</li>
         </ul>
-        <p><em>อ้างอิงข้อมูลพื้นฐาน: กรมอนามัย และทีมผู้เชี่ยวชาญ RAT TERMINATOR</em></p>
+        <p><em>อ้างอิงข้อมูลพื้นฐาน: กรมอนามัย และทีมผู้เชี่ยวชาญ RAT GO AWAY</em></p>
       `
     }
   };
@@ -322,7 +322,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'เบอร์โทรศัพท์': phone,
             'บริการหรือสินค้าที่สนใจ': service,
             'รายละเอียดปัญหาและพื้นที่': msg,
-            '_subject': `[RAT TERMINATOR] ขอนัดสำรวจพื้นที่ใหม่ - คุณ${name} (${phone})`,
+            '_subject': `[RAT GO AWAY] ขอนัดสำรวจพื้นที่ใหม่ - คุณ${name} (${phone})`,
             '_template': 'table',
             '_captcha': 'false'
           })
@@ -340,7 +340,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div style="flex:1;">
                   <strong style="font-size:1.05rem;color:#047857;display:block;margin-bottom:4px;">ส่งข้อมูลไปยังอีเมลเรียบร้อยแล้ว!</strong>
                   <p style="margin:0 0 10px 0;font-size:0.9rem;color:#065F46;line-height:1.55;">
-                    ขอบคุณ <strong>คุณ${name}</strong> ทางทีมงาน RAT TERMINATOR ได้รับข้อมูลเรียบร้อยแล้ว และจะติดต่อกลับที่เบอร์ <strong>${phone}</strong> โดยเร็วที่สุดครับ
+                    ขอบคุณ <strong>คุณ${name}</strong> ทางทีมงาน RAT GO AWAY ได้รับข้อมูลเรียบร้อยแล้ว และจะติดต่อกลับที่เบอร์ <strong>${phone}</strong> โดยเร็วที่สุดครับ
                   </p>
                   <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
                     <span style="font-size:0.82rem;color:#047857;font-weight:700;">หากต้องการปรึกษาด่วน:</span>
