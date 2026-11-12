@@ -40,6 +40,7 @@
   
   --transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
   --container-width: 1360px;
+  --nav-height: 84px;
 }
 
 /* Reset & Base */
@@ -51,7 +52,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 96px;
+  scroll-padding-top: calc(var(--nav-height) + 12px);
   font-size: 16px;
 }
 
@@ -96,7 +97,6 @@ button, input, textarea, select {
 .section {
   padding: 96px 0;
   position: relative;
-  scroll-margin-top: 88px;
 }
 
 .section-alt {
@@ -3140,6 +3140,9 @@ a.ribbon-item:hover .ribbon-text strong {
    SMARTPHONE & MOBILE OPTIMIZATIONS (Max-Width: 768px & 480px)
    ========================================================================== */
 @media (max-width: 768px) {
+  :root {
+    --nav-height: 68px;
+  }
   /* Global Layout & Overflow Protection */
   html, body {
     overflow-x: hidden !important;
@@ -3150,7 +3153,6 @@ a.ribbon-item:hover .ribbon-text strong {
 
   .section {
     padding: 54px 0;
-    scroll-margin-top: 72px;
   }
 
   .container {
